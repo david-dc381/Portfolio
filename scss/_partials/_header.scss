@@ -1,0 +1,29 @@
+.menu-pc {
+  width: 100%;
+  background-color: $color-primary;
+  position: fixed;
+  .main-menu {
+    height: 4rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 5em;
+    
+    &__list {
+      display: flex;
+    }
+    &__item {
+      padding: 0 2em;
+    }
+    &__link {
+      font-family: 'Josefin Sans', sans-serif, serif;
+      text-transform: uppercase;
+      color: $color-secondary;
+    }
+    
+  }
+}
+
+.menu-mobile {
+  display: none;
+}

@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #2B00FF;
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Josefin Sans", sans-serif, serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu-pc {
+  width: 100%;
+  background-color: #2B00FF;
+  position: fixed;
+}
+.menu-pc .main-menu {
+  height: 4rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 5em;
+}
+.menu-pc .main-menu__list {
+  display: flex;
+}
+.menu-pc .main-menu__item {
+  padding: 0 2em;
+}
+.menu-pc .main-menu__link {
+  font-family: "Josefin Sans", sans-serif, serif;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+/*# sourceMappingURL=styles.css.map */
