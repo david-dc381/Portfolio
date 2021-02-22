@@ -1,0 +1,78 @@
+.contact {
+  margin: 3rem 0;
+  h2 {
+    padding-left: 3em;
+    font-size: 3rem;
+    margin: 3rem 0;
+    text-shadow: -4px 2px #00b3ff;
+  }
+  
+  .contact-container {
+    padding: 0 1em;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .input-group {
+    // align-self: center;
+    width: 50%;
+    input, textarea {
+      display: block;
+      font-size: 1.2rem;
+      font-family: 'Josefin Sans', sans-serif, serif;
+      padding: 0 .3em;
+    }
+    input {
+      width: 100%;
+      height: 30px;
+      margin-bottom: 2rem;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid $color-secondary;
+      outline: none;
+      color: $color-secondary;
+
+      &::placeholder {
+        color: $color-secondary;
+      }
+    }
+    textarea {
+      width: 100%;
+      background: none;
+      color: $color-secondary;
+      outline: none;
+      border: none;
+      border-bottom: 1px solid $color-secondary;
+      margin-bottom: 2rem;
+
+      &::placeholder {
+        color: $color-secondary;
+      }
+    }
+  }
+
+  .img-container {
+    background-image: url('../images/blob-white.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    width: 21%;
+    img {
+      width: 250px;
+    }
+  }
+
+
+  .input-group__actions {
+    display: flex;
+    justify-content: center;
+
+    button {
+      padding: 1em 4em;
+      font-size: .9rem;
+      font-family: 'Raleway', sans-serif, serif;
+      font-weight: bolder;
+      letter-spacing: 5px;
+    }
+  }
+
+}

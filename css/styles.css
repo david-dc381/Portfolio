@@ -28,10 +28,44 @@ a {
   text-decoration: none;
 }
 
+.btn {
+  padding: 1em 1.2em;
+  border-radius: 15px;
+  border: none;
+  font-family: "Raleway", sans-serif, serif;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-primary {
+  border: 1.5px solid #0FF67A;
+  color: #0FF67A;
+  transition: all 0.3s ease-in;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.btn-primary:hover {
+  background-color: #0FF67A;
+  transform: scale(1.08);
+  transition: all 0.3s ease-out;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #0FF67A;
+  color: #fff;
+  transition: all 0.3s ease-out;
+}
+.btn-secondary:hover {
+  transform: scale(1.08);
+  transition: all 0.3s ease-out;
+}
+
 .menu-pc {
   width: 100%;
-  background-color: #2B00FF;
+  background-color: transparent;
   position: fixed;
+  top: 0;
 }
 .menu-pc .main-menu {
   height: 4rem;
@@ -51,9 +85,278 @@ a {
   text-transform: uppercase;
   color: #fff;
 }
+@media screen and (max-width: 768px) {
+  .menu-pc {
+    display: none;
+  }
+}
 
 .menu-mobile {
   display: none;
+}
+@media screen and (max-width: 768px) {
+  .menu-mobile {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 4rem;
+    height: 1.55rem;
+    align-content: center;
+    margin-top: 1.5rem;
+  }
+  .menu-mobile .burger-menu {
+    width: 2rem;
+    border-radius: 0.1rem;
+    background: linear-gradient(#24e4dc 20%, transparent 20%, transparent 40%, #24e4dc 40%, #24e4dc 60%, transparent 60%, transparent 80%, #24e4dc 80%, #24e4dc 100%);
+    cursor: pointer;
+  }
+  .menu-mobile a {
+    color: #fff;
+  }
+  .menu-mobile .main-menu {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0084ff;
+    text-align: center;
+    top: -100vh;
+  }
+  .menu-mobile .main-menu ul {
+    margin: 30% 0;
+  }
+  .menu-mobile .main-menu li {
+    transition: all 0.3s ease-out;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 3rem;
+  }
+  .menu-mobile .main-menu li:hover {
+    transition: all 0.3s ease-out;
+    transform: scale(1.5);
+    text-shadow: 2px 2px #363636;
+  }
+  .menu-mobile .main-menu a {
+    font-family: "Raleway", sans-serif, serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+}
+
+main {
+  margin-top: 5rem;
+}
+
+.main-banner {
+  width: 100%;
+  margin-bottom: 5rem;
+  display: flex;
+}
+.main-banner__name {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-banner__photo {
+  background-image: url("../images/blob-white.svg");
+  width: 44%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  align-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9em 0px;
+}
+.main-banner__photo img {
+  width: 56%;
+}
+.main-banner__title {
+  color: #68D2FF;
+  width: 50%;
+  font-size: 6rem;
+  text-shadow: 8px 8px #43004e;
+}
+.main-banner__title span {
+  color: #E75AFE;
+  text-shadow: 8px 8px #43004e;
+}
+
+.about {
+  margin: 3rem 0;
+}
+.about h2 {
+  padding-left: 3em;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  text-shadow: -4px 2px #00b3ff;
+}
+.about__container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.about__container p {
+  max-width: 550px;
+  font-family: "Josefin Sans", sans-serif, serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.about__technologies {
+  display: flex;
+  justify-content: space-around;
+  margin: 3rem;
+  flex-wrap: wrap;
+}
+.about__technologies h3 {
+  font-size: 1.7rem;
+  align-self: center;
+}
+.about__technologies--container {
+  width: 650px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.about__technologies--container div {
+  margin: 1rem auto;
+}
+.about__technologies--container img {
+  width: 50px;
+  margin: 0 2rem;
+}
+.about__technologies--container div:nth-child(8) img {
+  width: 100px;
+}
+.about__technologies--container div:nth-child(9) img {
+  width: 100px;
+}
+.about__technologies--container span {
+  display: block;
+  font-family: "Raleway";
+  text-align: center;
+  text-transform: capitalize;
+  line-height: 2;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.portfolio h2 {
+  padding-left: 3em;
+  font-size: 3rem;
+  margin: 3rem 0;
+  text-shadow: -4px 2px #00b3ff;
+}
+.portfolio .card__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 350px));
+  grid-template-rows: 2;
+  justify-content: center;
+  gap: 2rem;
+}
+.portfolio .card {
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0px 0px 13px -1px #2d2d2d;
+}
+.portfolio .card__image {
+  width: 100%;
+}
+.portfolio .card__image img {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.portfolio .card__body {
+  padding: 1.2em;
+}
+.portfolio .card__title {
+  padding: 0;
+  margin: 0 1rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #3d3d3d;
+  text-shadow: none;
+}
+.portfolio .card__copy {
+  font-family: "Raleway", sans-serif, serif;
+  line-height: 1.7;
+  font-size: 0.8rem;
+  margin: 0.5rem 0;
+  color: #3d3d3d;
+}
+.portfolio .card__actions {
+  padding-bottom: 1.3em;
+  display: flex;
+  justify-content: center;
+}
+.contact {
+  margin: 3rem 0;
+}
+.contact h2 {
+  padding-left: 3em;
+  font-size: 3rem;
+  margin: 3rem 0;
+  text-shadow: -4px 2px #00b3ff;
+}
+.contact .contact-container {
+  padding: 0 1em;
+  display: flex;
+  justify-content: space-evenly;
+}
+.contact .input-group {
+  width: 50%;
+}
+.contact .input-group input, .contact .input-group textarea {
+  display: block;
+  font-size: 1.2rem;
+  font-family: "Josefin Sans", sans-serif, serif;
+  padding: 0 0.3em;
+}
+.contact .input-group input {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 2rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  color: #fff;
+}
+.contact .input-group input::placeholder {
+  color: #fff;
+}
+.contact .input-group textarea {
+  width: 100%;
+  background: none;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 2rem;
+}
+.contact .input-group textarea::placeholder {
+  color: #fff;
+}
+.contact .img-container {
+  background-image: url("../images/blob-white.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  width: 21%;
+}
+.contact .img-container img {
+  width: 250px;
+}
+.contact .input-group__actions {
+  display: flex;
+  justify-content: center;
+}
+.contact .input-group__actions button {
+  padding: 1em 4em;
+  font-size: 0.9rem;
+  font-family: "Raleway", sans-serif, serif;
+  font-weight: bolder;
+  letter-spacing: 5px;
 }
 
 /*# sourceMappingURL=styles.css.map */

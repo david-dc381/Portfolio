@@ -1,0 +1,36 @@
+.btn {
+  padding: 1em 1.2em;
+  border-radius: 15px;
+  border: none;
+  font-family: 'Raleway', sans-serif, serif;
+  color: $color-secondary;
+  cursor: pointer;
+}
+
+.btn-primary {
+  // background-color: $btn-terciary;
+  border: 1.5px solid $btn-terciary;
+  color: $btn-terciary;
+  transition: all .3s ease-in;
+  font-size: .8rem;
+  font-weight: 700;
+
+
+  &:hover {
+    background-color: $btn-terciary;
+    transform: scale(1.08);
+    transition: all .3s ease-out;
+    color: $color-secondary;
+  }
+}
+
+.btn-secondary {
+  background-color: $btn-terciary;
+  color: $color-secondary;
+  transition: all .3s ease-out;
+
+  &:hover {
+    transform: scale(1.08);
+    transition: all .3s ease-out;
+  }
+}

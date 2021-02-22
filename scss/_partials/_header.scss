@@ -1,7 +1,8 @@
 .menu-pc {
   width: 100%;
-  background-color: $color-primary;
+  background-color: transparent;
   position: fixed;
+  top: 0;
   .main-menu {
     height: 4rem;
     display: flex;
@@ -22,8 +23,67 @@
     }
     
   }
+
+  
+  @include medium {
+    display: none;
+  }
 }
+
 
 .menu-mobile {
   display: none;
+  
+  @include medium {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 4rem;
+    height: 1.55rem;
+    align-content: center;
+    margin-top: 1.5rem;
+    
+    .burger-menu {
+      width: 2rem;
+      border-radius: .1rem;
+      background: linear-gradient(#24e4dc 20%, transparent 20%,
+      transparent 40%,#24e4dc 40%, #24e4dc 60%, transparent 60%,
+      transparent 80%,#24e4dc 80%, #24e4dc 100%);
+      cursor: pointer;
+    }
+    a {
+      color: #fff;
+    }
+
+    .main-menu {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgb(0, 132, 255);
+      text-align: center;
+      top: -100vh;
+      
+      ul {
+        margin: 30% 0;
+      }
+
+      li {
+        transition: all .3s ease-out;
+        width: 50%;
+        margin: auto;
+        margin-bottom: 3rem;
+
+        &:hover {
+          transition: all .3s ease-out;
+          transform: scale(1.5);
+          text-shadow: 2px 2px rgb(54, 54, 54);
+        }
+      }
+
+      a {
+        font-family: 'Raleway', sans-serif, serif;
+        font-size: 2rem;
+        text-transform: uppercase;
+      }
+    }
+  }
 }
