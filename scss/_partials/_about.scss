@@ -1,21 +1,46 @@
 .about {
-  margin: 3rem 0;
+  margin: 7rem 0;
   h2 {
     padding-left: 3em;
     font-size: 3rem;
     margin-bottom: 3rem;
-    text-shadow: -4px 2px #00b3ff;
+    text-shadow: -4px 2px #610082;
+
+    @include medium {
+      padding-left: .5em;
+    }
+    @include regular {
+      padding-left: 1em;
+    }
+    @include small {
+      padding-left: .5em;
+    }
   }
   &__container {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     
+    img {
+      width: 20%;
+      height: auto;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      margin-left: 3rem;
+      margin-right: 3rem;
+    }
+
     p {
       max-width: 550px;
       font-family: 'Josefin Sans', sans-serif, serif;
       font-weight: 300;
       font-size: 1.5rem;
       line-height: 1.5;
+      padding: 0 2em;
+      
+      @include small {
+        padding: 0 1em;
+      }
     }
   }
 
@@ -28,6 +53,7 @@
     h3 {
       font-size: 1.7rem;
       align-self: center;
+      margin: 2rem 0;
     }
 
     &--container {
@@ -40,6 +66,11 @@
       img {
         width: 50px;
         margin: 0 2rem;
+
+        @include small {
+          width: 30px;
+          margin: 0 1rem;
+        }
       }
       div:nth-child(8) {
         img {
@@ -59,6 +90,11 @@
         line-height: 2;
         font-size: .8rem;
         font-weight: 600;
+
+        @include small {
+          font-size: 0.5rem;
+          font-weight: 400;
+        }
       }
     }
   }

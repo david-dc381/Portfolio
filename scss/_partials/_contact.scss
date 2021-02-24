@@ -1,10 +1,20 @@
 .contact {
-  margin: 3rem 0;
+  margin: 15rem 0;
   h2 {
     padding-left: 3em;
     font-size: 3rem;
     margin: 3rem 0;
-    text-shadow: -4px 2px #00b3ff;
+    text-shadow: -4px 2px #610082;
+
+    @include medium {
+      padding-left: .5em;
+    }
+    @include regular {
+      padding-left: 1.5em;
+    }
+    @include small {
+      padding-left: .5em;
+    }
   }
   
   .contact-container {
@@ -15,6 +25,14 @@
   .input-group {
     // align-self: center;
     width: 50%;
+
+    @include medium {
+      width: 80%;
+    }
+    @include small {
+      width: 100%;
+    }
+
     input, textarea {
       display: block;
       font-size: 1.2rem;
@@ -43,6 +61,10 @@
       border: none;
       border-bottom: 1px solid $color-secondary;
       margin-bottom: 2rem;
+      max-width: 100%;
+      max-height: 10.25rem;
+      min-height: 5.125rem;
+      min-width: 100%;
 
       &::placeholder {
         color: $color-secondary;
@@ -55,9 +77,19 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top;
-    width: 21%;
+    width: 35%;
+    // width: 35%;
+    // height: 10%;
+    // background-color: #fff;
+    // border-radius: 15px;
+
+    @include medium {
+      display: none;
+    }
+
     img {
-      width: 250px;
+    width: 100%;
+    margin-top: 3rem;
     }
   }
 

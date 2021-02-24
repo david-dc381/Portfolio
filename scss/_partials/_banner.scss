@@ -1,29 +1,32 @@
 main {
-  margin-top: 5rem;
+  margin: 6rem 0;
 }
 .main-banner {
   width: 100%;
   margin-bottom: 5rem;
-  // background-color: yellow;
   display: flex;
-  // justify-content: space-evenly;
-  // width: 100%;
-  // height: auto;
-  // padding-top: 5em;
-  // background-image: url('../images/blob-white.svg');
-  // background-repeat: no-repeat;
-  // background-size: contain;
-  // background-position: left;
+
+  @include medium {
+    flex-wrap: wrap;
+  }
+
   &__name {
     width: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+
+    @include large {
+      width: 55%;
+    }
+    @include medium {
+      width: 100%;
+    }
     
   }
   &__photo {
     background-image: url('../images/blob-white.svg');
-    // width: 30%;
     width: 44%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,22 +37,59 @@ main {
     justify-content: center;
     padding: 9em 0px;
 
+    @include large {
+      width: 60%;
+    }
+    @include medium {
+      width: 60%;
+      margin: auto;
+      background-size: contain;
+    }
+
     img {
       width: 56%;
+
+      @include medium {
+        width: 86%;
+      }
     }
 
   }
   &__title {
     color: #68D2FF;
-    // width: 350px;
-    width: 50%;
+    // width: 50%;
+    width: 80%;
     font-size: 6rem;
-    // line-height: 1.5;
     text-shadow: 8px 8px  #43004e;
 
+    @include large {
+      font-size: 5rem;
+    }
+    @include medium {
+      width: 100%;
+      text-align: center;
+      margin-top: 3rem;
+    }
+    @include small {
+      font-size: 4rem;
+    }
     span {
       color: #E75AFE;
       text-shadow: 8px 8px #43004e;
+    }
+  }
+  &__copy {
+    width: 80%;
+    font-size: 2rem;
+    margin-top: 5%;
+    text-shadow: 3px 3px #43004e;
+    color: #fff;
+  
+    @include medium {
+      width: 100%;
+    }
+    @include small {
+      font-size: 1.5rem;
     }
   }
 }

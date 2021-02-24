@@ -32,5 +32,6 @@
   &:hover {
     transform: scale(1.08);
     transition: all .3s ease-out;
+    background-color: darken($btn-terciary, $amount: 10)
   }
 }

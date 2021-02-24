@@ -16,17 +16,20 @@
   <!-- Header -->
   <header>
     <!-- Menu Pc -->
-    <div class="menu-pc">
+    <div id="menu-pc" class="menu-pc">
       <nav class="main-menu">
         <ul class="main-menu__list">
           <li class="main-menu__item">
-            <a class="main-menu__link" href="#about">About me</a>
+            <a class="volver-arriba main-menu__link" href="#">Home</a>
           </li>
           <li class="main-menu__item">
-            <a class="main-menu__link" href="#portfolio">Portfolio</a>
+            <a class="scroll-suave main-menu__link" href="#about">About me</a>
           </li>
           <li class="main-menu__item">
-            <a class="main-menu__link" href="#contact">Contact</a>
+            <a class="scroll-suave main-menu__link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="scroll-suave main-menu__link" href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
@@ -34,25 +37,26 @@
     <!-- End menu pc -->
 
     <!-- Menu mobile -->
-    <div class="menu-mobile">
-      
-      <nav class="main-menu">
+    <div id="menu-mobile" class="menu-mobile">
+      <nav id="slide-menu" class="main-menu">
+        <img id="close-image" class="close-image" src="images/x.png" alt="close image">
         <ul class="main-menu__list">
           <li class="main-menu__item">
-            <a class="main-menu__link" href="#about">About me</a>
+            <a class="volver-arriba main-menu__link" href="#">Home</a>
           </li>
           <li class="main-menu__item">
-            <a class="main-menu__link" href="#portfolio">Portfolio</a>
+            <a class="scroll-suave main-menu__link" href="#about">About me</a>
           </li>
           <li class="main-menu__item">
-            <a class="main-menu__link" href="#contact">Contact</a>
+            <a class="scroll-suave main-menu__link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="scroll-suave main-menu__link" href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
 
-      <div class="burger-menu">
-        <img src="" alt="">
-      </div>
+      <div id="burger-menu" class="burger-menu"></div>
     </div>
     <!-- End menu mobile -->
   </header>
@@ -62,7 +66,9 @@
     <!-- Section banner -->
     <section class="main-banner">
       <div class="main-banner__name">
-        <h1 class="main-banner__title">Hello, <span>my name is</span> David</h1>
+        <h1 class="main-banner__title">Hello, <span>my name is</span> David Cayo
+          <p class="main-banner__copy">and I am a web developer 🚀</p>
+        </h1>
       </div>
       <div class="main-banner__photo">
         <!-- <img src="images/blob-white.svg" alt=""> -->
@@ -72,10 +78,10 @@
     <!-- End section banner -->
 
     <!-- Section about me -->
-    <section class="about">
+    <section id="about" class="about">
       <h2>ABOUT ME</h2>
       <div class="about__container">
-        <img src="" alt="Profile picture" class="about__container--img">
+        <img src="images/perfil_default.svg" alt="Profile picture" class="about__container--img">
         <p class="about__container--descrip">
           Hi, my name is David Cayo and I am a Systems Analyst and self-taught web developer.
           <br>
@@ -128,7 +134,7 @@
     <!-- End section about me -->
 
     <!-- Section Portfolio -->
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
       <h2>PORTFOLIO</h2>
       <div class="card__container">
         <div class="card">
@@ -263,7 +269,7 @@
     <!-- End section portfolio -->
 
     <!-- Section Contact -->
-    <section class="contact">
+    <section id="contact" class="contact">
       <h2>CONCTACT</h2>
       <div class="contact-container">
         <div class="input-group">
@@ -277,7 +283,7 @@
           </div>
         </div>
         <div class="img-container">
-          <img src="images/mailbox.svg" alt="Gmail image" class="contact-image">
+          <img src="images/message-sent.svg" alt="Gmail image" class="contact-image">
         </div>
       </div>
     </section>
@@ -285,7 +291,15 @@
   </main>
 
   <footer>
-
+    <div class="footer__author">
+			<p>Created by <span> __David Cayo</span></p>
+		</div>
+    <div class="footer__copy">
+			<p>Copyright 2021 &copy; David Cayo</p>
+		</div>
   </footer>
 </body>
+<script src="js/scrollSuave.js"></script>
+<script src="js/stickyHeader.js"></script>
+<script src="js/menuMobile.js"></script>
 </html>
