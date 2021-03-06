@@ -22,22 +22,48 @@
     flex-wrap: wrap;
     
     img {
+      border-radius: 50%;
       width: 20%;
       height: auto;
       margin-top: 1rem;
       margin-bottom: 2rem;
       margin-left: 3rem;
       margin-right: 3rem;
+      background: linear-gradient(145deg, #ffc228, #43004e);
+
+      @include x-large {
+        margin: 0;
+      }
+      @include large {
+        margin-left: 3rem;
+        width: 25%;
+      }
+      @include regular {
+        margin-left: 0;
+        width: 30%;
+      }
+      @include small {
+        width: 45%;
+      }
     }
 
     p {
       max-width: 550px;
       font-family: 'Josefin Sans', sans-serif, serif;
       font-weight: 300;
-      font-size: 1.5rem;
+      font-size: 1.7rem;
       line-height: 1.5;
       padding: 0 2em;
       
+      @include x-large {
+        padding: 0;
+      }
+      @include large {
+        padding: 0 2em;
+      }
+      @include medium {
+        margin-top: 1.5rem;
+      }
       @include small {
         padding: 0 1em;
       }

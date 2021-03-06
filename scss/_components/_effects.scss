@@ -1,0 +1,110 @@
+// Para la seccion About
+.about__container {
+  &--img, &--descrip {
+    opacity: 0;
+    transition: all 2s;
+  }
+}
+.about__technologies {
+  &--container {
+    opacity: 0;
+    transition: all 2s;
+  }
+}
+
+// Para la sección de portafolio
+.card__container {
+  opacity: 0;
+  transition: all 1s;
+}
+
+
+// para la seccion de contacto
+.input-group {
+  opacity: 0;
+  transition: all 1s;
+}
+.img-container {
+  opacity: 0;
+  transition: all 1s;
+}
+
+// seccion de las marcas de banner
+// .main-aplication {
+//   opacity: .1;
+//   transition: all 2s;
+// }
+// // seccion de l about
+// .feature-card {
+//   opacity: .1;
+//   transition: all 4s;
+// }
+
+// // seccion de why
+// .why__image {
+//   opacity: .3;
+//   transition: all 2s;
+// }
+// .why__body {
+//   opacity: 0;
+//   transition: all 3s;
+// }
+
+// // seccion team
+// .team .card {
+//   transition: all 2s;
+// }
+// // seccion usuarios
+// .slider {
+//   opacity: 0;
+//   transition: all 1s;
+// }
+
+// // seccion de blog-> posts
+// .posts {
+//   opacity: .3;
+//   transition: all 2s;
+// }
+
+// // footer
+// .footer {
+//   .information {
+//     transition: all 2s;
+//   }
+// }
+
+
+
+// Efectos
+.transform_left {
+  transform: translateX(-40%);
+}
+
+.transform_right {
+  transform: translateX(40%);
+}
+
+// .transform_up {
+//     @keyframes arriba {
+//         0% {
+//             bottom: -30%;
+//             opacity: .3;
+//         }
+//         100% {
+//             bottom: 0%;
+//             opacity: 1;
+//         }
+//     }
+// }
+.transform_up {
+  transform: translateY(30%);
+}
+
+.transform_down {
+  transform: translateY(10%);
+}
+
+.aparece {
+  opacity: 1;
+  transform: none;
+}

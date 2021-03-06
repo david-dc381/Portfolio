@@ -2,6 +2,7 @@
   width: 100%;
   background-color: transparent;
   position: fixed;
+  z-index: $z-fixed;
   top: 0;
   .main-menu {
     height: 4rem;

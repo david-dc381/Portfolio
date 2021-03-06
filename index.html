@@ -7,8 +7,10 @@
   <meta name="description" content="I am a web developer self-taught,I love the front-end technologies">
   <meta name="keywords" content="Web development css html javascript">
   <meta name="author" content="David Cayo">
+  <link rel="shortcout icon" href="images/logo.png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="stylesheet" href="css/styles.css">
   <title>David Cayo</title>
 </head>
@@ -66,13 +68,13 @@
     <!-- Section banner -->
     <section class="main-banner">
       <div class="main-banner__name">
-        <h1 class="main-banner__title">Hello, <span>my name is</span> David Cayo
+        <h1 class="main-banner__title animate__animated animate__bounceInDown animate__delay-1s">Hello, <span>my name is</span> David Cayo
           <p class="main-banner__copy">and I am a web developer 🚀</p>
         </h1>
       </div>
-      <div class="main-banner__photo">
+      <div class="main-banner__photo animate__animated animate__bounceIn animate__delay-2s">
         <!-- <img src="images/blob-white.svg" alt=""> -->
-        <img src="images/andrea.jpg" alt="Full body photo">
+        <img src="images/perfil.png" alt="Full body photo">
       </div>
     </section>
     <!-- End section banner -->
@@ -81,8 +83,8 @@
     <section id="about" class="about">
       <h2>ABOUT ME</h2>
       <div class="about__container">
-        <img src="images/perfil_default.svg" alt="Profile picture" class="about__container--img">
-        <p class="about__container--descrip">
+        <img src="images/perfil2.png" alt="Profile picture" class="about__container--img fade_left">
+        <p class="about__container--descrip fade_right">
           Hi, my name is David Cayo and I am a Systems Analyst and self-taught web developer.
           <br>
           <br>
@@ -91,7 +93,7 @@
       </div>
       <div class="about__technologies">
         <h3>Technologies:</h3>
-        <div class="about__technologies--container">
+        <div class="about__technologies--container fade_up">
           <div>
             <img src="images/html.svg" alt="html logo">
             <span>HTML</span>
@@ -136,21 +138,20 @@
     <!-- Section Portfolio -->
     <section id="portfolio" class="portfolio">
       <h2>PORTFOLIO</h2>
-      <div class="card__container">
+      <div class="card__container fade_down">
         <div class="card">
           <div class="card__header">
             <div class="card__figure">
               <div class="card__image">
-                <img src="images/andrea.jpg" alt="">
+                <img src="images/project1.PNG" alt="">
               </div>
             </div>
           </div>
 
           <div class="card__body">
-            <h2 class="card__title">Lorem ipsum dolor sit amet.</h2>
-            <p class="card__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Iusto asperiores cupiditate, nulla saepe nisi sequi.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum placeat quidem cupiditate exercitationem earum perspiciatis, tenetur aliquid asperiores neque natus odit voluptates, ipsa, sunt velit omnis quos inventore! Vel, cupiditate!</p>
+            <h2 class="card__title">Agency-AB</h2>
+            <p class="card__copy">This is a landing page project, where <b>'Agency-AB'</b> specializes in 
+              providing branding and design services to different companies.
           </div>
 
           <div class="card__footer">
@@ -164,14 +165,16 @@
           <div class="card__header">
             <div class="card__figure">
               <div class="card__image">
-                <img src="" alt="">
+                <img src="images/project2.PNG" alt="second project">
               </div>
             </div>
           </div>
 
           <div class="card__body">
-            <h2 class="card__title">Lorem ipsum dolor sit amet.</h2>
-            <p class="card__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto asperiores cupiditate, nulla saepe nisi sequi.</p>
+            <h2 class="card__title">BASIC</h2>
+            <p class="card__copy">This is a landing page project about <b>'Basic'</b> a company that offers
+               its service building landing pages or App sites using Sass as technology.
+            </p>
           </div>
 
           <div class="card__footer">
@@ -185,14 +188,15 @@
           <div class="card__header">
             <div class="card__figure">
               <div class="card__image">
-                <img src="" alt="">
+                <img src="images/project3.PNG" alt="third project">
               </div>
             </div>
           </div>
 
           <div class="card__body">
-            <h2 class="card__title">Lorem ipsum dolor sit amet.</h2>
-            <p class="card__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto asperiores cupiditate, nulla saepe nisi sequi.</p>
+            <h2 class="card__title">Coffe & Cake</h2>
+            <p class="card__copy">This is a landing page project, <b>'Coffee & Cake'</b> is a very famous bakery in town 
+              that receives orders and delivers them to your home.</p>
           </div>
 
           <div class="card__footer">
@@ -206,14 +210,15 @@
           <div class="card__header">
             <div class="card__figure">
               <div class="card__image">
-                <img src="" alt="">
+                <img src="images/project4.png" alt="fourth project">
               </div>
             </div>
           </div>
 
           <div class="card__body">
-            <h2 class="card__title">Lorem ipsum dolor sit amet.</h2>
-            <p class="card__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto asperiores cupiditate, nulla saepe nisi sequi.</p>
+            <h2 class="card__title">S-Design Studio</h2>
+            <p class="card__copy">It is a landing page project about <b>'S-Design Studio'</b> which is a company specialized
+               in creating designs for international companies.</p>
           </div>
 
           <div class="card__footer">
@@ -227,14 +232,15 @@
           <div class="card__header">
             <div class="card__figure">
               <div class="card__image">
-                <img src="" alt="">
+                <img src="images/project5.png" alt="fifth project">
               </div>
             </div>
           </div>
 
           <div class="card__body">
-            <h2 class="card__title">Lorem ipsum dolor sit amet.</h2>
-            <p class="card__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto asperiores cupiditate, nulla saepe nisi sequi.</p>
+            <h2 class="card__title">Hey Blogger :)</h2>
+            <p class="card__copy"><b>'Hey Blogger :)'</b> is a personal blog project where are published articles about technology in general,
+               it was built with the laravel framework technology.</p>
           </div>
 
           <div class="card__footer">
@@ -271,21 +277,21 @@
     <!-- Section Contact -->
     <section id="contact" class="contact">
       <h2>CONCTACT</h2>
-      <div class="contact-container">
-        <div class="input-group">
-          <input type="text" class="input-group__input" placeholder="Name" required>
-          <input type="email" class="input-group__input" placeholder="E-mail" required>
-          <textarea name="" id="" cols="30" rows="10" class="input-group__textarea" placeholder="Message" required></textarea>
+      <form action="https://formsubmit.co/david381dc@gmail.com" method="POST" name="formulario_contacto" class="contact-container">
+        <div class="input-group fade_left">
+          <input type="text" name="name" class="input-group__input" placeholder="Name" required>
+          <input type="email" name="email" class="input-group__input" placeholder="E-mail"  required>
+          <textarea name="message" id="message" cols="30" rows="10" class="input-group__textarea" placeholder="Message" title="Tu comentario no debe exceder los 255 caracteres" data-pattern="^.{1,255}$" required></textarea>
           <div class="input-group__footer">
             <div class="input-group__actions">
               <button type="submit" class="btn btn-secondary">SEND</button>
             </div>
           </div>
         </div>
-        <div class="img-container">
+        <div class="img-container fade_right">
           <img src="images/message-sent.svg" alt="Gmail image" class="contact-image">
         </div>
-      </div>
+      </form>
     </section>
     <!-- End section contact -->
   </main>
@@ -302,4 +308,6 @@
 <script src="js/scrollSuave.js"></script>
 <script src="js/stickyHeader.js"></script>
 <script src="js/menuMobile.js"></script>
+<script src="js/validationForm.js"></script>
+<script src="js/scrollEfects.js"></script>
 </html>

@@ -28,6 +28,52 @@ a {
   text-decoration: none;
 }
 
+.about__container--img, .about__container--descrip {
+  opacity: 0;
+  transition: all 2s;
+}
+
+.about__technologies--container {
+  opacity: 0;
+  transition: all 2s;
+}
+
+.card__container {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.input-group {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.img-container {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.transform_left {
+  transform: translateX(-40%);
+}
+
+.transform_right {
+  transform: translateX(40%);
+}
+
+.transform_up {
+  transform: translateY(30%);
+}
+
+.transform_down {
+  transform: translateY(10%);
+}
+
+.aparece {
+  opacity: 1;
+  transform: none;
+}
+
 .btn {
   padding: 1em 1.2em;
   border-radius: 15px;
@@ -66,6 +112,7 @@ a {
   width: 100%;
   background-color: transparent;
   position: fixed;
+  z-index: 100;
   top: 0;
 }
 .menu-pc .main-menu {
@@ -181,7 +228,7 @@ main {
 }
 @media screen and (max-width: 1024px) {
   .main-banner__name {
-    width: 55%;
+    width: 50%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -190,35 +237,35 @@ main {
   }
 }
 .main-banner__photo {
-  background-image: url("../images/blob-white.svg");
-  width: 44%;
+  background-image: url("../images/blob-color.png");
+  width: 35%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   align-content: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 9em 0px;
+  padding: 3em 0px;
 }
 @media screen and (max-width: 1024px) {
   .main-banner__photo {
-    width: 60%;
+    width: 45%;
   }
 }
 @media screen and (max-width: 768px) {
   .main-banner__photo {
-    width: 60%;
+    width: 75%;
     margin: auto;
     background-size: contain;
   }
 }
 .main-banner__photo img {
-  width: 56%;
+  width: 90%;
 }
 @media screen and (max-width: 768px) {
   .main-banner__photo img {
-    width: 86%;
+    width: 73%;
   }
 }
 .main-banner__title {
@@ -296,20 +343,59 @@ main {
   flex-wrap: wrap;
 }
 .about__container img {
+  border-radius: 50%;
   width: 20%;
   height: auto;
   margin-top: 1rem;
   margin-bottom: 2rem;
   margin-left: 3rem;
   margin-right: 3rem;
+  background: linear-gradient(145deg, #ffc228, #43004e);
+}
+@media screen and (max-width: 1440px) {
+  .about__container img {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .about__container img {
+    margin-left: 3rem;
+    width: 25%;
+  }
+}
+@media screen and (max-width: 575px) {
+  .about__container img {
+    margin-left: 0;
+    width: 30%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .about__container img {
+    width: 45%;
+  }
 }
 .about__container p {
   max-width: 550px;
   font-family: "Josefin Sans", sans-serif, serif;
   font-weight: 300;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   line-height: 1.5;
   padding: 0 2em;
+}
+@media screen and (max-width: 1440px) {
+  .about__container p {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .about__container p {
+    padding: 0 2em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about__container p {
+    margin-top: 1.5rem;
+  }
 }
 @media screen and (max-width: 360px) {
   .about__container p {
@@ -430,7 +516,7 @@ main {
 .portfolio .card__copy {
   font-family: "Raleway", sans-serif, serif;
   line-height: 1.7;
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin: 0.5rem 0;
   color: #3d3d3d;
 }
