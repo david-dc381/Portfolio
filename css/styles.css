@@ -184,7 +184,6 @@ a {
     background-color: #0084ff;
     text-align: center;
     top: -200vh;
-    overflow-y: scroll;
   }
   .menu-mobile .main-menu ul {
     margin: 30% 0;

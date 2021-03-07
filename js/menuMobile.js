@@ -30,6 +30,7 @@
         propiedadesMenu.slideMenu.style.top = "0";
         propiedadesMenu.slideMenu.style.left = "0";
         propiedadesMenu.slideMenu.style.transition = "all .5s ease-out";
+        propiedadesMenu.slideMenu.style.overflowY = "scroll";
       } else {
         propiedadesMenu.menu_activo = false;
         propiedadesMenu.slideMenu.style.top = "-200vh";
