@@ -183,6 +183,7 @@ a {
     height: 100vh;
     background-color: #0084ff;
     text-align: center;
+    top: -200vh;
   }
   .menu-mobile .main-menu ul {
     margin: 30% 0;
