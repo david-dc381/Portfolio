@@ -32,14 +32,14 @@
         propiedadesMenu.slideMenu.style.transition = "all .5s ease-out";
       } else {
         propiedadesMenu.menu_activo = false;
-        propiedadesMenu.slideMenu.style.top = "-100vh";
+        propiedadesMenu.slideMenu.style.top = "-200vh";
         propiedadesMenu.slideMenu.style.transition = "all .5s ease-out";
       }
     },
 
     ocultarMenu: () => {
       propiedadesMenu.menuActivo = false;
-      propiedadesMenu.slideMenu.style.top = "-100vh";
+      propiedadesMenu.slideMenu.style.top = "-200vh";
       propiedadesMenu.slideMenu.style.transition = "all .5s ease-out";
     },
   };

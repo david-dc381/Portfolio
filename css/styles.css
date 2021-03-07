@@ -141,11 +141,12 @@ a {
 
 .menu-mobile {
   display: none;
+  z-index: 1000;
 }
 .menu-mobile .close-image {
   position: absolute;
   top: 5%;
-  left: 46%;
+  left: 43%;
   width: 50px;
   cursor: pointer;
   transition: all 0.3s ease-out;
@@ -182,7 +183,6 @@ a {
     height: 100vh;
     background-color: #0084ff;
     text-align: center;
-    top: -100vh;
   }
   .menu-mobile .main-menu ul {
     margin: 30% 0;
