@@ -36,14 +36,14 @@
       }
       @include large {
         margin-left: 3rem;
-        width: 25%;
+        // width: 25%;
       }
       @include regular {
         margin-left: 0;
-        width: 30%;
+        // width: 30%;
       }
       @include small {
-        width: 55%;
+        // width: 55%;
         height: 200px;
       }
     }
