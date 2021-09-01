@@ -263,6 +263,7 @@ main {
 }
 .main-banner__photo img {
   width: 90%;
+  border-radius: 50%;
 }
 @media screen and (max-width: 768px) {
   .main-banner__photo img {
@@ -346,7 +347,7 @@ main {
 .about__container img {
   border-radius: 50%;
   width: 20%;
-  height: auto;
+  height: 20%;
   margin-top: 1rem;
   margin-bottom: 2rem;
   margin-left: 3rem;
