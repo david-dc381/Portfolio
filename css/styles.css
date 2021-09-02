@@ -124,6 +124,7 @@ a {
 }
 .menu-pc .main-menu__list {
   display: flex;
+  align-items: center;
 }
 .menu-pc .main-menu__item {
   padding: 0 2em;
@@ -379,7 +380,6 @@ main {
 .about__container p {
   max-width: 550px;
   font-family: "Josefin Sans", sans-serif, serif;
-  font-weight: 300;
   font-size: 1.7rem;
   line-height: 1.5;
   padding: 0 2em;

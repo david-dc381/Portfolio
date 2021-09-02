@@ -3,8 +3,8 @@
   const scrollMobile = document.getElementById('menu-mobile');
 
   window.onscroll = () => {
-    if (document.documentElement.scrollTop > 140) {
-      scroll.style.backgroundColor = "#006bff";
+    if ((document.documentElement.scrollTop > 140) || (document.querySelector('.change'))) {
+      // scroll.style.backgroundColor = "#001531";
       scroll.style.boxShadow = "0px 20px 50px 0px rgba(0, 0, 0, 0.1)";
       scroll.style.transition = "all .5s ease-out";
       

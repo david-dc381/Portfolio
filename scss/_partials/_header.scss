@@ -13,6 +13,7 @@
 
     &__list {
       display: flex;
+      align-items: center;
     }
     &__item {
       padding: 0 2em;
@@ -22,9 +23,7 @@
       text-transform: uppercase;
       color: $color-secondary;
     }
-    
   }
-
   
   @include medium {
     display: none;
