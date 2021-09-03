@@ -338,6 +338,7 @@ main {
 @media screen and (max-width: 360px) {
   .about h2 {
     padding-left: 0.5em;
+    font-size: 2.4rem;
   }
 }
 .about__container {
@@ -477,6 +478,7 @@ main {
 @media screen and (max-width: 360px) {
   .portfolio h2 {
     padding-left: 0.4em;
+    font-size: 2.4rem;
   }
 }
 .portfolio .card__container {
@@ -549,6 +551,7 @@ main {
 @media screen and (max-width: 360px) {
   .contact h2 {
     padding-left: 0.5em;
+    font-size: 2.4rem;
   }
 }
 .contact .contact-container {
