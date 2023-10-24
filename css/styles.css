@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -482,16 +483,20 @@ main {
   }
 }
 .portfolio .card__container {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 350px));
   grid-template-rows: 2;
   justify-content: center;
-  gap: 2rem;
+  gap: 2rem; */
+  width: 3500px;
+  display: flex;
+  flex-wrap: nowrap;
 }
 .portfolio .card {
   border-radius: 15px;
   background-color: #fff;
   box-shadow: 0px 0px 13px -1px #2d2d2d;
+  margin: 0 2rem;
 }
 @media screen and (max-width: 360px) {
   .portfolio .card {
@@ -527,7 +532,39 @@ main {
 .portfolio .card__actions {
   padding-bottom: 1.3em;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+}
+.portfolio .card__actions a {
+  width: 150px;
+  text-align: center;
+  font-size: 1rem;
+}
+.portfolio .contenedor-slider {
+  width: 100%;
+  padding: 54px 0;
+  /*ponemos relative para que los iconos de flechas las podamos mover relativas a su padre*/
+  position: relative;
+  overflow: hidden; /*nos oculta el espacio del scroll que se crea por el tamaño de las imgs*/
+}
+.portfolio .contenedor-slider .btn-anterior, .portfolio .contenedor-slider .btn-siguiente {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.portfolio .contenedor-slider .btn-anterior {
+  left: 2%;
+}
+.portfolio .contenedor-slider .btn-siguiente {
+  right: 2%;
+}
+.portfolio .contenedor-slider .btn-anterior i, .portfolio .contenedor-slider .btn-siguiente i {
+  color: #000000;
+  font-size: 1.3rem;
+}
+.portfolio .btn-anterior i:hover, .portfolio .btn-siguiente i:hover {
+  color: #0089E0;
 }
 
 .contact {
