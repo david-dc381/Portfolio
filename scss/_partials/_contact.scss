@@ -109,3 +109,37 @@
   }
 
 }
+
+
+/* Para el loader */
+span i {
+  color: #e9eff1;
+}
+.show-loader {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+}
+.enviando {
+  margin-bottom: 0 !important;
+}
+.hide-loader {
+  display: none;
+}
+.hide-mensaje {
+  display: none;
+}
+.show-mensaje {
+  display: block;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  border-radius: 8px;
+  border-color: #badbcc;
+  background-color: #d1e7dd;
+  color: #0f5132 !important; /* para cambiar el color del texto */
+  padding: 1em 0;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+}

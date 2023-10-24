@@ -189,7 +189,8 @@
   
                 <div class="card__footer">
                   <div class="card__actions">
-                    <a href="https://basic-company.netlify.app" target="_blank" class="btn btn-primary">SEE PROJECT</a>
+                    <a href="https://github.com/david-dc381/Project-Basic" target="_blank" class="btn btn-primary"> <i class="fa-brands fa-github"></i> CODE</a>
+                    <a href="https://basic-company.netlify.app/" target="_blank" class="btn btn-primary"> <i class="fa-solid fa-eye"></i> DEMO</a>
                   </div>
                 </div>
               </div>
@@ -214,7 +215,8 @@
   
                 <div class="card__footer">
                   <div class="card__actions">
-                    <a href="https://coffee-and-cake.netlify.app" target="_blank" class="btn btn-primary">SEE PROJECT</a>
+                    <a href="https://github.com/david-dc381/Coffee-Cake" target="_blank" class="btn btn-primary"> <i class="fa-brands fa-github"></i> CODE</a>
+                    <a href="https://coffee-and-cake.netlify.app/" target="_blank" class="btn btn-primary"> <i class="fa-solid fa-eye"></i> DEMO</a>
                   </div>
                 </div>
               </div>
@@ -239,7 +241,8 @@
   
                 <div class="card__footer">
                   <div class="card__actions">
-                    <a href="https://sdesign-studio.netlify.app" target="_blank" class="btn btn-primary">SEE PROJECT</a>
+                    <a href="https://github.com/david-dc381/Design-Studio" target="_blank" class="btn btn-primary"> <i class="fa-brands fa-github"></i> CODE</a>
+                    <a href="https://sdesign-studio.netlify.app/" target="_blank" class="btn btn-primary"> <i class="fa-solid fa-eye"></i> DEMO</a>
                   </div>
                 </div>
               </div>
@@ -264,7 +267,8 @@
   
                 <div class="card__footer">
                   <div class="card__actions">
-                    <a href="https://hey-blogger.000webhostapp.com/" target="_blank" class="btn btn-primary">SEE PROJECT</a>
+                    <a href="https://github.com/david-dc381/Design-Studio" target="_blank" class="btn btn-primary"> <i class="fa-brands fa-github"></i> CODE</a>
+                    <a href="https://hey-blogger.000webhostapp.com/" target="_blank" class="btn btn-primary"> <i class="fa-solid fa-eye"></i> DEMO</a>
                   </div>
                 </div>
               </div>
@@ -289,7 +293,8 @@
   
                 <div class="card__footer">
                   <div class="card__actions">
-                    <a href="https://devcompany.netlify.app" target="_blank" class="btn btn-primary">SEE PROJECT</a>
+                    <a href="https://github.com/david-dc381/Dev-Company" target="_blank" class="btn btn-primary"> <i class="fa-brands fa-github"></i> CODE</a>
+                    <a href="https://devcompany.netlify.app/" target="_blank" class="btn btn-primary"> <i class="fa-solid fa-eye"></i> DEMO</a>
                   </div>
                 </div>
               </div>
@@ -312,10 +317,15 @@
     <!-- Section Contact -->
     <section id="contact" class="contact">
       <h2>< CONCTACT /></h2>
-      <form action="https://formsubmit.co/david381dc@gmail.com" method="POST" name="formulario_contacto" class="contact-container">
+      <form id="enviarForm" action="https://formsubmit.co/david381dc@gmail.com" method="POST" name="formulario_contacto" class="contact-container">
         <div class="input-group fade_left">
-          <input type="text" name="name" class="input-group__input" placeholder="Name" required>
-          <input type="email" name="email" class="input-group__input" placeholder="E-mail"  required>
+
+          <!-- desabilitar captcha -->
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="Nuevo Mensaje!">
+
+          <input id="name" type="text" name="name" class="input-group__input" placeholder="Name" required>
+          <input id="email" type="email" name="email" class="input-group__input" placeholder="E-mail"  required>
           <textarea name="message" id="message" cols="30" rows="10" class="input-group__textarea" placeholder="Message" title="Tu comentario no debe exceder los 255 caracteres" data-pattern="^.{1,255}$" required></textarea>
           <div class="input-group__footer">
             <div class="input-group__actions">
@@ -327,6 +337,11 @@
           <img src="images/message-sent.svg" alt="Gmail image" class="contact-image">
         </div>
       </form>
+      <span id="loader" class="hide-loader">
+        <i class="fa fa-refresh fa-spin" aria-hidden="true"></i>
+        <p class="enviando">Enviando...</p>
+      </span>
+      <span id="mensajeEnviado" class="hide-mensaje">!! Se envio el mensaje !!</span>
     </section>
     <!-- End section contact -->
   </main>
@@ -348,4 +363,5 @@
 <script src="js/darkMode.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="js/slider.js"></script>
+<script src="js/enviarEmail.js"></script>
 </html>
