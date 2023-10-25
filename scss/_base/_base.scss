@@ -9,15 +9,21 @@
 html {
   font-size: 16px;
   overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif, serif;
 }
 
 body {
-  background-color: $color-primary;
+  background: $color-primary;
   color: $color-secondary;
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: 'Josefin Sans', sans-serif, serif;
+  font-family: 'Montserrat', sans-serif, serif;
+}
+
+h2 {
+  text-shadow: -4px 2px #070079;
+  color: #fff;
 }
 
 li {

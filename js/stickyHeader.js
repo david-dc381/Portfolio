@@ -5,20 +5,25 @@
   window.onscroll = () => {
     if ((document.documentElement.scrollTop > 140) || (document.querySelector('.change'))) {
       // scroll.style.backgroundColor = "#001531";
-      scroll.style.boxShadow = "0px 20px 50px 0px rgba(0, 0, 0, 0.1)";
-      scroll.style.transition = "all .5s ease-out";
+      scroll.style.background = "rgba( 255, 255, 255, 0.25 )";
+      scroll.style.boxShadow = "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )";
+      scroll.style.backdropFilter = "blur( 4px )";
+      scroll.style.transition = "all .1s ease-in";
+
       
-      scrollMobile.style.backgroundColor = "#006bff";
-      scrollMobile.style.boxShadow = "0px 20px 50px 0px rgba(0, 0, 0, 0.1)";
+      scrollMobile.style.background = "rgba( 255, 255, 255, 0.25 )";
+      scrollMobile.style.boxShadow = "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )";
+      scrollMobile.style.backdropFilter = "blur( 4px )";
       scrollMobile.style.transition = "all .5s ease-out";
 
 
     } else {
-      scroll.style.backgroundColor = "#006bff";
+      scroll.style.background = "transparent";
       scroll.style.boxShadow = "none";
-      scroll.style.transition = "all .5s ease-in";
+      scroll.style.backdropFilter = "none";
+      scroll.style.transition = "all .1s ease-out";
       
-      scrollMobile.style.backgroundColor = "#006bff";
+      scrollMobile.style.backgroundColor = "transparent";
       scrollMobile.style.boxShadow = "none";
       scrollMobile.style.transition = "all .5s ease-in";
     }

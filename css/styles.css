@@ -1,4 +1,3 @@
-@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -10,15 +9,21 @@
 html {
   font-size: 16px;
   overflow-x: hidden;
+  font-family: "Montserrat", sans-serif, serif;
 }
 
 body {
-  background-color: #006bff;
-  color: #fff;
+  background: linear-gradient(45deg, #006bff, #ebebeb);
+  color: #2a303c;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Josefin Sans", sans-serif, serif;
+  font-family: "Montserrat", sans-serif, serif;
+}
+
+h2 {
+  text-shadow: -4px 2px #070079;
+  color: #fff;
 }
 
 li {
@@ -80,27 +85,26 @@ a {
   border-radius: 15px;
   border: none;
   font-family: "Raleway", sans-serif, serif;
-  color: #fff;
+  color: #2a303c;
   cursor: pointer;
 }
 
 .btn-primary {
-  border: 1.5px solid #0FF67A;
-  color: #0FF67A;
+  background: #4e42f0;
+  color: #fff;
   transition: all 0.3s ease-in;
   font-size: 0.8rem;
   font-weight: 700;
 }
 .btn-primary:hover {
-  background-color: #0FF67A;
+  background-color: #2d22c4;
   transform: scale(1.08);
   transition: all 0.3s ease-out;
-  color: #fff;
 }
 
 .btn-secondary {
   background-color: #0FF67A;
-  color: #fff;
+  color: #2a303c;
   transition: all 0.3s ease-out;
 }
 .btn-secondary:hover {
@@ -115,6 +119,12 @@ a {
   position: fixed;
   z-index: 100;
   top: 0;
+  /*   background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 ); */
 }
 .menu-pc .main-menu {
   height: 4rem;
@@ -122,6 +132,7 @@ a {
   justify-content: flex-end;
   align-items: center;
   padding: 0 5em;
+  color: #0a0189;
 }
 .menu-pc .main-menu__list {
   display: flex;
@@ -131,9 +142,9 @@ a {
   padding: 0 2em;
 }
 .menu-pc .main-menu__link {
-  font-family: "Josefin Sans", sans-serif, serif;
   text-transform: uppercase;
-  color: #fff;
+  color: rgb(31, 19, 209);
+  font-weight: 600;
 }
 @media screen and (max-width: 768px) {
   .menu-pc {
@@ -149,9 +160,11 @@ a {
   position: absolute;
   top: 5%;
   left: 43%;
-  width: 50px;
+  width: 80px;
+  font-size: 40px;
   cursor: pointer;
   transition: all 0.3s ease-out;
+  color: #ffffff;
 }
 .menu-mobile .close-image:hover {
   transform: scale(1.3);
@@ -173,19 +186,24 @@ a {
     width: 2rem;
     height: 2rem;
     border-radius: 0.1rem;
-    background: linear-gradient(#68D2FF 20%, transparent 20%, transparent 40%, #68D2FF 40%, #68D2FF 60%, transparent 60%, transparent 80%, #68D2FF 80%, #68D2FF 100%);
+    background: linear-gradient(#3b79ec 20%, transparent 20%, transparent 40%, #3b79ec 40%, #3b79ec 60%, transparent 60%, transparent 80%, #3b79ec 80%, #3b79ec 100%);
     cursor: pointer;
   }
   .menu-mobile a {
-    color: #fff;
+    color: #ffffff;
   }
   .menu-mobile .main-menu {
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(0, 132, 255);
     text-align: center;
     top: -200vh;
+    background: rgba(101, 186, 255, 0.8156862745);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
   }
   .menu-mobile .main-menu ul {
     margin: 30% 0;
@@ -216,6 +234,7 @@ main {
   width: 100%;
   margin-bottom: 5rem;
   display: flex;
+  padding: 0 2rem;
 }
 @media screen and (max-width: 768px) {
   .main-banner {
@@ -241,7 +260,7 @@ main {
 }
 .main-banner__photo {
   background-image: url("../images/blob-color.png");
-  width: 35%;
+  width: 40%;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -264,7 +283,7 @@ main {
   }
 }
 .main-banner__photo img {
-  width: 90%;
+  width: 100%;
   border-radius: 50%;
 }
 @media screen and (max-width: 768px) {
@@ -274,8 +293,8 @@ main {
 }
 .main-banner__title {
   color: #68D2FF;
-  width: 80%;
-  font-size: 6rem;
+  width: 90%;
+  font-size: 7rem;
   text-shadow: 8px 8px #43004e;
 }
 @media screen and (max-width: 1024px) {
@@ -324,7 +343,6 @@ main {
   padding-left: 3em;
   font-size: 3rem;
   margin-bottom: 3rem;
-  text-shadow: -4px 2px #610082;
 }
 @media screen and (max-width: 768px) {
   .about h2 {
@@ -344,7 +362,7 @@ main {
 }
 .about__container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 .about__container img {
@@ -381,8 +399,7 @@ main {
 }
 .about__container p {
   max-width: 550px;
-  font-family: "Josefin Sans", sans-serif, serif;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   line-height: 1.5;
   padding: 0 2em;
 }
@@ -416,6 +433,7 @@ main {
   font-size: 1.7rem;
   align-self: center;
   margin: 2rem 0;
+  color: #fff;
 }
 .about__technologies--container {
   width: 650px;
@@ -483,20 +501,23 @@ main {
   }
 }
 .portfolio .card__container {
-  /* display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 350px));
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 450px));
   grid-template-rows: 2;
   justify-content: center;
-  gap: 2rem; */
-  width: 3500px;
-  display: flex;
-  flex-wrap: nowrap;
+  gap: 1rem;
+  /* display: flex;
+  flex-wrap: nowrap; */
 }
 .portfolio .card {
   border-radius: 15px;
   background-color: #fff;
   box-shadow: 0px 0px 13px -1px #2d2d2d;
   margin: 0 2rem;
+  background: rgba(255, 255, 255, 0.575);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
 @media screen and (max-width: 360px) {
   .portfolio .card {
@@ -523,11 +544,11 @@ main {
   text-shadow: none;
 }
 .portfolio .card__copy {
-  font-family: "Raleway", sans-serif, serif;
   line-height: 1.7;
   font-size: 1rem;
   margin: 0.5rem 0;
   color: #3d3d3d;
+  padding: 1em;
 }
 .portfolio .card__actions {
   padding-bottom: 1.3em;
@@ -539,39 +560,12 @@ main {
   text-align: center;
   font-size: 1rem;
 }
-.portfolio .contenedor-slider {
-  width: 100%;
-  padding: 54px 0;
-  /*ponemos relative para que los iconos de flechas las podamos mover relativas a su padre*/
-  position: relative;
-  overflow: hidden; /*nos oculta el espacio del scroll que se crea por el tamaño de las imgs*/
-}
-.portfolio .contenedor-slider .btn-anterior, .portfolio .contenedor-slider .btn-siguiente {
-  display: inline-block;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.portfolio .contenedor-slider .btn-anterior {
-  left: 2%;
-}
-.portfolio .contenedor-slider .btn-siguiente {
-  right: 2%;
-}
-.portfolio .contenedor-slider .btn-anterior i, .portfolio .contenedor-slider .btn-siguiente i {
-  color: #000000;
-  font-size: 1.3rem;
-}
-.portfolio .btn-anterior i:hover, .portfolio .btn-siguiente i:hover {
-  color: #0089E0;
-}
 
 .contact {
   margin: 15rem 0;
 }
 .contact h2 {
-  padding-left: 3em;
+  padding-left: 1.7em;
   font-size: 3rem;
   margin: 3rem 0;
   text-shadow: -4px 2px #610082;
@@ -668,9 +662,9 @@ main {
 .contact .input-group__actions button {
   padding: 1em 4em;
   font-size: 0.9rem;
-  font-family: "Raleway", sans-serif, serif;
-  font-weight: bolder;
+  font-weight: 800;
   letter-spacing: 5px;
+  color: #ffffff;
 }
 
 /* Para el loader */
@@ -687,6 +681,7 @@ span i {
 
 .enviando {
   margin-bottom: 0 !important;
+  color: #fff;
 }
 
 .hide-loader {
@@ -699,7 +694,7 @@ span i {
 
 .show-mensaje {
   display: block;
-  width: 70%;
+  width: 50%;
   margin: auto;
   text-align: center;
   border-radius: 8px;
@@ -712,26 +707,19 @@ span i {
 }
 
 footer {
-  margin-top: 7rem;
-}
-
-.footer__author, .footer__copy {
-  width: 85%;
-  text-align: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
-  margin: auto;
-  padding: 1em 0;
-  font-family: "Raleway", sans-serif, serif;
-}
-.footer__author span, .footer__copy span {
-  font-family: "Josefin Sans", sans-serif, serif;
-  font-weight: 700;
-  color: #00eeff;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 .footer__copy {
+  width: 85%;
+  text-align: center;
+  margin: auto;
+  padding: 1em 0;
   border: none;
-  font-size: 0.7rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #dbdbdb;
 }
 
 /*# sourceMappingURL=styles.css.map */

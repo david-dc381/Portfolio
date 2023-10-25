@@ -4,7 +4,7 @@
     padding-left: 3em;
     font-size: 3rem;
     margin-bottom: 3rem;
-    text-shadow: -4px 2px #610082;
+  
 
     @include medium {
       padding-left: .5em;
@@ -19,7 +19,7 @@
   }
   &__container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
     
     img {
@@ -50,8 +50,7 @@
     
     p {
       max-width: 550px;
-      font-family: 'Josefin Sans', sans-serif, serif;
-      font-size: 1.7rem;
+      font-size: 1.5rem;
       line-height: 1.5;
       padding: 0 2em;
       
@@ -81,6 +80,7 @@
       font-size: 1.7rem;
       align-self: center;
       margin: 2rem 0;
+      color: #fff;
     }
 
     &--container {

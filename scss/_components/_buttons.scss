@@ -9,18 +9,18 @@
 
 .btn-primary {
   // background-color: $btn-terciary;
-  border: 1.5px solid $btn-terciary;
-  color: $btn-terciary;
+  // border: 1.5px solid $btn-terciary;
+  background: #4e42f0;
+  color: #fff;
   transition: all .3s ease-in;
   font-size: .8rem;
   font-weight: 700;
 
 
   &:hover {
-    background-color: $btn-terciary;
+    background-color: #2d22c4;
     transform: scale(1.08);
     transition: all .3s ease-out;
-    color: $color-secondary;
   }
 }
 

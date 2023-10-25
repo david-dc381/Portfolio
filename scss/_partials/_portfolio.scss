@@ -19,24 +19,31 @@
   }
 
   .card__container {
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 350px));
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 450px));
     grid-template-rows: 2;
     justify-content: center;
-    gap: 2rem; */
+    gap: 1rem;
     // display: inline-block !important;
     // justify-content: center;
     // max-width: 200px;
     // width: 100%;
-    width: 3500px;
-    display: flex;
-    flex-wrap: nowrap;
+    // width: 50%;
+    /* display: flex;
+    flex-wrap: nowrap; */
   }
   .card {
     border-radius: 15px;
     background-color: #fff;
     box-shadow: 0px 0px 13px -1px #2d2d2d;
     margin: 0 2rem;
+
+    background: rgba(255, 255, 255, 0.575);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+  // border-radius: 10px;
+  // border: 1px solid rgba(255, 255, 255, 0.575);
 
     @include small {
       margin: 0 .5rem;
@@ -63,11 +70,11 @@
       text-shadow: none;
     }
     &__copy {
-      font-family: 'Raleway', sans-serif, serif;
       line-height: 1.7;
       font-size: 1rem;
       margin: .5rem 0;
       color: $color-terciary;
+      padding: 1em;
     }
 
     &__actions {
@@ -85,32 +92,5 @@
 
 
 
-.contenedor-slider {
-  width: 100%;
-  // background: #f3f4fa;
-  padding: 54px 0;
-  /*ponemos relative para que los iconos de flechas las podamos mover relativas a su padre*/
-  position: relative;
-  overflow: hidden; /*nos oculta el espacio del scroll que se crea por el tamaño de las imgs*/
-}
-.contenedor-slider .btn-anterior, .contenedor-slider  .btn-siguiente {
-    display: inline-block;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  .contenedor-slider .btn-anterior {
-    left: 2%;
-  }
-  .contenedor-slider .btn-siguiente {
-    right: 2%;
-  }
-  .contenedor-slider .btn-anterior i, .contenedor-slider .btn-siguiente i {
-    color: #000000;
-    font-size: 1.3rem;
-  }
-  .btn-anterior i:hover,  .btn-siguiente i:hover {
-    color: #0089E0;
-  }
+
 }

@@ -9,7 +9,9 @@
   <meta name="author" content="David Cayo">
   <link rel="shortcout icon" href="images/logo.png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Raleway&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Raleway&display=swap" rel="stylesheet"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <script src="https://kit.fontawesome.com/71c9559db8.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/styles.css">
@@ -23,15 +25,19 @@
       <nav class="main-menu">
         <ul class="main-menu__list">
           <li class="main-menu__item">
+            <i class="fa-solid fa-house"></i> &nbsp;
             <a class="volver-arriba main-menu__link" href="#">Home</a>
           </li>
           <li class="main-menu__item">
+            <i class="fa-solid fa-user"></i> &nbsp;
             <a class="scroll-suave main-menu__link" href="#about">About me</a>
           </li>
           <li class="main-menu__item">
+            <i class="fa-solid fa-folder-open"></i> &nbsp;
             <a class="scroll-suave main-menu__link" href="#portfolio">Projects</a>
           </li>
           <li class="main-menu__item">
+            <i class="fa-solid fa-comment-dots"></i> &nbsp;
             <a class="scroll-suave main-menu__link" href="#contact">Contact</a>
           </li>
         </ul>
@@ -42,18 +48,23 @@
     <!-- Menu mobile -->
     <div id="menu-mobile" class="menu-mobile">
       <nav id="slide-menu" class="main-menu">
-        <img id="close-image" class="close-image" src="images/x.png" alt="close image">
+        <!-- <img id="close-image" class="close-image" src="images/x.png" alt="close image"> -->
+        <i class="fa-regular fa-circle-xmark close-image" id="close-image"></i>
         <ul class="main-menu__list">
           <li class="main-menu__item">
+            <i class="fa-solid fa-house"></i> &nbsp;
             <a class="volver-arriba main-menu__link" href="#">Home</a>
           </li>
           <li class="main-menu__item">
+            <i class="fa-solid fa-user"></i> &nbsp;
             <a class="scroll-suave main-menu__link" href="#about">About me</a>
           </li>
           <li class="main-menu__item">
+            <i class="fa-solid fa-folder-open"></i> &nbsp;
             <a class="scroll-suave main-menu__link" href="#portfolio">Projects</a>
           </li>
           <li class="main-menu__item">
+            <i class="fa-solid fa-comment-dots"></i> &nbsp;
             <a class="scroll-suave main-menu__link" href="#contact">Contact</a>
           </li>
         </ul>
@@ -70,19 +81,19 @@
     <section class="main-banner">
       <div class="main-banner__name">
         <h1 class="main-banner__title animate__animated animate__bounceInDown animate__delay-1s">Hello, <span>my name is</span> David Cayo
-          <p class="main-banner__copy">and I am a web developer 🚀</p>
+          <p class="main-banner__copy">and I am a web designer 🚀</p>
         </h1>
       </div>
       <div class="main-banner__photo animate__animated animate__bounceIn animate__delay-2s">
         <!-- <img src="images/blob-white.svg" alt=""> -->
-        <img src="images/perfil.png" alt="Full body photo">
+        <img src="images/Saly-11.svg" alt="Full body photo">
       </div>
     </section>
     <!-- End section banner -->
 
     <!-- Section about me -->
     <section id="about" class="about">
-      <h2>< ABOUT ME /></h2>
+      <h2>ABOUT ME</h2>
       <div class="about__container">
         <img src="images/perfil2.png" alt="Profile picture" class="about__container--img fade_left">
         <p class="about__container--descrip fade_right">
@@ -119,18 +130,23 @@
             <img src="images/git.svg" alt="git logo">
             <span>GIT</span>
           </div>
-          <div>
+         <!--  <div>
             <img src="images/php.svg" alt="php logo">
             <span>PHP</span>
+          </div> -->
+          <div>
+            <img src="images/figma.svg" alt="figma logo">
+            <span>Figma</span>
           </div>
           <div>
             <img src="images/mysql.svg" alt="mysql logo">
             <span>MySQL</span>
           </div>
-          <div>
+          <!-- <div>
             <img src="images/laravel.svg" alt="laravel logo">
             <span>LARAVEL</span>
-          </div>
+          </div> -->
+
         </div>
       </div>
     </section>
@@ -138,39 +154,37 @@
 
     <!-- Section Portfolio -->
     <section id="portfolio" class="portfolio">
-      <h2>< PROJECTS /></h2>
-      <div class="contenedor-slider">
-        <div id="slider" class="slider">
+      <h2>PROJECTS</h2>
+      <!-- <div class="contenedor-slider"> -->
+        <!-- <div id="slider" class="slider"> -->
           <div class="card__container fade_down">
         
-            <!-- Project 1 -->
-            <div class="slide">
+            <!-- Project 8 -->
+            
               <div class="card">
                 <div class="card__header">
                   <div class="card__figure">
                     <div class="card__image">
-                      <img src="images/project1.PNG" alt="">
+                      <img src="images/project8.png" alt="">
                     </div>
                   </div>
                 </div>
   
                 <div class="card__body">
-                  <h2 class="card__title">Agency-AB</h2>
-                  <p class="card__copy">This is a landing page project, where <b>'Agency-AB'</b> specializes in 
-                    providing branding and design services to different companies.
+                  <h2 class="card__title">Tesla Clone</h2>
+                  <p class="card__copy">This is a landing page project about <b>'Tesla Clone'</b>, where the original Tesla page design was brought over.
                 </div>
   
                 <div class="card__footer">
                   <div class="card__actions">
-                    <a href="https://github.com/david-dc381/Agency-SB" target="_blank" class="btn btn-primary"> <i class="fa-brands fa-github"></i> CODE</a>
-                    <a href="https://agency-ab.netlify.app" target="_blank" class="btn btn-primary"> <i class="fa-solid fa-eye"></i> DEMO</a>
+                    <a href="https://github.com/david-dc381/Tesla-clone" target="_blank" class="btn btn-primary"> <i class="fa-brands fa-github"></i> CODE</a>
+                    <a href="https://a-tesla-clone.netlify.app/" target="_blank" class="btn btn-primary"> <i class="fa-solid fa-eye"></i> DEMO</a>
                   </div>
                 </div>
               </div>
-            </div>
 
             <!-- Project 2 -->
-            <div class="slide">
+            
               <div class="card">
                 <div class="card__header">
                   <div class="card__figure">
@@ -194,10 +208,34 @@
                   </div>
                 </div>
               </div>
-            </div>
+            
 
+            <!-- Project 7 -->
+            
+              <div class="card">
+                <div class="card__header">
+                  <div class="card__figure">
+                    <div class="card__image">
+                      <img src="images/project7.PNG" alt="third project">
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="card__body">
+                  <h2 class="card__title">Construcciones Ordoñez Mallorca</h2>
+                  <p class="card__copy">This is a multilanguage landing page project for a construction company located in the city of Mallorca - Spain</p>
+                </div>
+  
+                <div class="card__footer">
+                  <div class="card__actions">
+                    <a href="https://github.com/davidcayo/Construciones-Ordonez-Mallorca" target="_blank" class="btn btn-primary"> <i class="fa-brands fa-github"></i> CODE</a>
+                    <a href="https://construccionesordonezmallorca.es/" target="_blank" class="btn btn-primary"> <i class="fa-solid fa-eye"></i> DEMO</a>
+                  </div>
+                </div>
+              </div>
+           
             <!-- Project 3 -->
-            <div class="slide">
+            
               <div class="card">
                 <div class="card__header">
                   <div class="card__figure">
@@ -220,10 +258,10 @@
                   </div>
                 </div>
               </div>
-            </div>
+            
 
             <!-- Project 4 -->
-            <div class="slide">
+            
               <div class="card">
                 <div class="card__header">
                   <div class="card__figure">
@@ -246,10 +284,10 @@
                   </div>
                 </div>
               </div>
-            </div>
+            
 
             <!-- Project 5 -->
-            <div class="slide">
+            
               <div class="card">
                 <div class="card__header">
                   <div class="card__figure">
@@ -272,10 +310,10 @@
                   </div>
                 </div>
               </div>
-            </div>
+            
 
             <!-- Project 6 -->
-            <div class="slide">
+            
               <div class="card">
                 <div class="card__header">
                   <div class="card__figure">
@@ -297,17 +335,42 @@
                     <a href="https://devcompany.netlify.app/" target="_blank" class="btn btn-primary"> <i class="fa-solid fa-eye"></i> DEMO</a>
                   </div>
                 </div>
+            <!-- </div> -->
+          <!-- </div> -->
+        </div>
+
+
+         <!-- Project 1 -->
+            
+         <div class="card">
+          <div class="card__header">
+            <div class="card__figure">
+              <div class="card__image">
+                <img src="images/project1.PNG" alt="">
               </div>
+            </div>
+          </div>
+
+          <div class="card__body">
+            <h2 class="card__title">Agency-AB</h2>
+            <p class="card__copy">This is a landing page project, where <b>'Agency-AB'</b> specializes in 
+              providing branding and design services to different companies.
+          </div>
+
+          <div class="card__footer">
+            <div class="card__actions">
+              <a href="https://github.com/david-dc381/Agency-SB" target="_blank" class="btn btn-primary"> <i class="fa-brands fa-github"></i> CODE</a>
+              <a href="https://agency-ab.netlify.app" target="_blank" class="btn btn-primary"> <i class="fa-solid fa-eye"></i> DEMO</a>
             </div>
           </div>
         </div>
         <!-- Flechas de anterior y siguiente -->
-        <div class="btn-anterior" id="btnAnterior">
+        <!-- <div class="btn-anterior" id="btnAnterior">
           <i class="fa fa-arrow-left" aria-hidden="true"></i>
         </div>
         <div class="btn-siguiente" id="btnSiguiente">
           <i class="fa fa-arrow-right" aria-hidden="true"></i>
-        </div>
+        </div> -->
 
         
       </div>
@@ -316,7 +379,7 @@
 
     <!-- Section Contact -->
     <section id="contact" class="contact">
-      <h2>< CONCTACT /></h2>
+      <h2>CONCTACT</h2>
       <form id="enviarForm" action="https://formsubmit.co/david381dc@gmail.com" method="POST" name="formulario_contacto" class="contact-container">
         <div class="input-group fade_left">
 
@@ -347,11 +410,8 @@
   </main>
 
   <footer>
-    <div class="footer__author">
-			<p>Created by <span> __David Cayo</span></p>
-		</div>
     <div class="footer__copy">
-			<p>Copyright 2021 &copy; David Cayo</p>
+			<p>David Cayo 🦸‍♂️</p>
 		</div>
   </footer>
 </body>
@@ -364,4 +424,5 @@
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="js/slider.js"></script>
 <script src="js/enviarEmail.js"></script>
+
 </html>

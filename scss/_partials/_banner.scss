@@ -5,6 +5,7 @@ main {
   width: 100%;
   margin-bottom: 5rem;
   display: flex;
+  padding: 0 2rem;
 
   @include medium {
     flex-wrap: wrap;
@@ -27,7 +28,7 @@ main {
   }
   &__photo {
     background-image: url('../images/blob-color.png');
-    width: 35%;
+    width: 40%;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -36,6 +37,7 @@ main {
     align-items: center;
     justify-content: center;
     padding: 3em 0px;
+    // border-radius: 50%;
 
     @include large {
       width: 45%;
@@ -47,7 +49,7 @@ main {
     }
 
     img {
-      width: 90%;
+      width: 100%;
       border-radius: 50%;
 
       @include medium {
@@ -59,8 +61,8 @@ main {
   &__title {
     color: #68D2FF;
     // width: 50%;
-    width: 80%;
-    font-size: 6rem;
+    width: 90%;
+    font-size: 7rem;
     text-shadow: 8px 8px  #43004e;
 
     @include large {

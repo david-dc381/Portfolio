@@ -1,23 +1,15 @@
 footer {
-  margin-top: 7rem;
-}
-.footer__author {
-  width: 85%;
-  text-align: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
-  margin: auto;
-  padding: 1em 0;
-  font-family: 'Raleway', sans-serif, serif;
-
-  span {
-    font-family: 'Josefin Sans', sans-serif, serif;
-    font-weight: 700;
-    color: #00eeff;
-  }
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 .footer__copy {
-  @extend .footer__author;
+  width: 85%;
+  text-align: center;
+  margin: auto;
+  padding: 1em 0;
   border: none;
-  font-size: .7rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #dbdbdb;
 }
