@@ -569,7 +569,7 @@ main {
   margin-bottom: 0.5rem;
 }
 .portfolio .card .tag_container .tag {
-  background: linear-gradient(90deg, rgb(74, 3, 99) 0%, rgb(136, 17, 177) 50%, rgb(178, 24, 232) 100%);
+  background: linear-gradient(90deg, rgb(90, 0, 122) 0%, rgb(136, 17, 177) 50%, rgb(178, 24, 232) 100%);
   box-shadow: rgba(31, 38, 135, 0.37) 0px 8px 32px 0px;
   backdrop-filter: blur(4px);
   color: #fff;
@@ -578,6 +578,7 @@ main {
   font-weight: bold;
   line-height: 2.3;
   font-size: 0.8rem;
+  margin: 0 0.3rem;
 }
 
 .contact {
