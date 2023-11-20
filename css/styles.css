@@ -454,7 +454,7 @@ main {
   }
 }
 .about__technologies--container div:nth-child(8) img {
-  width: 100px;
+  width: 50px;
 }
 .about__technologies--container div:nth-child(9) img {
   width: 100px;
@@ -506,8 +506,6 @@ main {
   grid-template-rows: 2;
   justify-content: center;
   gap: 1rem;
-  /* display: flex;
-  flex-wrap: nowrap; */
 }
 .portfolio .card {
   border-radius: 15px;
@@ -533,7 +531,9 @@ main {
   border-top-right-radius: 15px;
 }
 .portfolio .card__body {
-  padding: 1.2em;
+  padding-top: 1.2em;
+  padding-left: 1.2em;
+  padding-right: 1.2em;
 }
 .portfolio .card__title {
   padding: 0;
@@ -548,7 +548,9 @@ main {
   font-size: 1rem;
   margin: 0.5rem 0;
   color: #3d3d3d;
-  padding: 1em;
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 .portfolio .card__actions {
   padding-bottom: 1.3em;
@@ -559,6 +561,23 @@ main {
   width: 150px;
   text-align: center;
   font-size: 1rem;
+}
+.portfolio .card .tag_container {
+  width: 100%;
+  height: auto;
+  padding: 1em 2em;
+  margin-bottom: 0.5rem;
+}
+.portfolio .card .tag_container .tag {
+  background: linear-gradient(90deg, rgb(74, 3, 99) 0%, rgb(136, 17, 177) 50%, rgb(178, 24, 232) 100%);
+  box-shadow: rgba(31, 38, 135, 0.37) 0px 8px 32px 0px;
+  backdrop-filter: blur(4px);
+  color: #fff;
+  padding: 0.4em 1em;
+  border-radius: 10px;
+  font-weight: bold;
+  line-height: 2.3;
+  font-size: 0.8rem;
 }
 
 .contact {
