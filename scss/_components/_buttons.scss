@@ -8,9 +8,7 @@
 }
 
 .btn-primary {
-  // background-color: $btn-terciary;
-  // border: 1.5px solid $btn-terciary;
-  background: #4e42f0;
+  background: linear-gradient(90deg, rgba(27,17,170,1) 0%, rgba(70,58,233,1) 50%, rgba(69,58,215,1) 100%);
   color: #fff;
   transition: all .3s ease-in;
   font-size: .8rem;
@@ -18,7 +16,7 @@
 
 
   &:hover {
-    background-color: #2d22c4;
+    background: linear-gradient(90deg, rgba(23,14,157,1) 0%, rgba(57,45,214,1) 50%, rgba(58,48,201,1) 100%);
     transform: scale(1.08);
     transition: all .3s ease-out;
   }

@@ -90,14 +90,14 @@ a {
 }
 
 .btn-primary {
-  background: #4e42f0;
+  background: linear-gradient(90deg, rgb(27, 17, 170) 0%, rgb(70, 58, 233) 50%, rgb(69, 58, 215) 100%);
   color: #fff;
   transition: all 0.3s ease-in;
   font-size: 0.8rem;
   font-weight: 700;
 }
 .btn-primary:hover {
-  background-color: #2d22c4;
+  background: linear-gradient(90deg, rgb(23, 14, 157) 0%, rgb(57, 45, 214) 50%, rgb(58, 48, 201) 100%);
   transform: scale(1.08);
   transition: all 0.3s ease-out;
 }
